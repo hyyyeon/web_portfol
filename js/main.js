@@ -1,5 +1,5 @@
 
 function sayHello() {
-  alert('안녕하세요!');
+  alert('main페이지 입니다');
 }
 
