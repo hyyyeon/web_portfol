@@ -273,8 +273,7 @@
 }
 
 
-
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   header {
     text-align: center;
   }
