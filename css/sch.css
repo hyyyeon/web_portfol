@@ -273,7 +273,6 @@
 }
 
 @media (max-width: 600px) {
-  /* Header */
   #header {
     height: auto;
     line-height: inherit;
@@ -307,8 +306,63 @@
     text-align: center; /* 메뉴 아이템 가운데 정렬 */
   }
 
-  /* Sections */
   .container2 {
     padding: 1em;
   }
+}
+
+
+/* 토글 */
+.menu-toggle {
+	display: none; 
+	cursor: pointer;
+	color: #629DD1;
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+
+.menu-toggle:hover {
+	color: #555f66;
+}
+
+.navbar_menu {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar_menu li {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.navbar_menu li a {
+	color: #629DD1;
+	text-decoration: none;
+}
+
+.navbar_menu.active {
+	display: block;
+}
+
+@media (max-width: 600px) {
+	.menu-toggle {
+			display: block;
+	}
+
+	.navbar_menu {
+			display: none;
+			position: absolute;
+			top: 3em; 
+			left: 0;
+			width: 100%;
+			background-color: #fff; 
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+			z-index: 1000;
+	}
+
+	.navbar_menu li {
+			display: block;
+			text-align: center; 
+			margin: 0.5em 0;
+	}
 }

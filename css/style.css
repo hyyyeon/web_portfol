@@ -273,7 +273,6 @@
 }
 
 @media (max-width: 600px) {
-  /* Header */
   #header {
     height: auto;
     line-height: inherit;
@@ -337,7 +336,7 @@
 
 /* 토글 */
 .menu-toggle {
-	display: none; /* Initially hide on larger screens */
+	display: none; 
 	cursor: pointer;
 	color: #629DD1;
 	font-size: 1.5em;
@@ -348,7 +347,6 @@
 	color: #555f66;
 }
 
-/* Mobile Navigation */
 .navbar_menu {
 	display: flex;
 	justify-content: flex-end;
@@ -364,32 +362,29 @@
 	text-decoration: none;
 }
 
-/* Show Menu on Toggle */
 .navbar_menu.active {
 	display: block;
 }
 
 @media (max-width: 600px) {
-	/* Show Toggle Button */
 	.menu-toggle {
 			display: block;
 	}
 
-	/* Hide Menu Items by Default on Small Screens */
 	.navbar_menu {
 			display: none;
 			position: absolute;
-			top: 3em; /* Adjust as needed */
+			top: 3em; 
 			left: 0;
 			width: 100%;
-			background-color: #fff; /* Adjust background color */
+			background-color: #fff; 
 			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 			z-index: 1000;
 	}
 
 	.navbar_menu li {
 			display: block;
-			text-align: center; /* Center align menu items */
+			text-align: center; 
 			margin: 0.5em 0;
 	}
 }
