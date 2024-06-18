@@ -274,45 +274,62 @@
 
 
 @media (max-width: 600px) {
-  header {
-    text-align: center;
-  }
+	header {
+		text-align: center;
+	}
 
-  #nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	#header h1 {
+		left: 50%;
+		transform: translateX(-50%);
+	}
 
-  #nav ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
+	#header nav {
+		right: 50%;
+		transform: translateX(50%);
+	}
 
-  #one .container {
-    padding: 10px;
-  }
+	#header nav ul {
+		flex-direction: column;
+	}
 
-  .row {
-    flex-direction: column; /* 작은 화면에서 박스들을 세로로 쌓음 */
-    align-items: center;
-  }
-  .box {
-    width: 100%; /* 작은 화면에서는 전체 너비를 차지 */
-    margin-bottom: 1em;
-  }
+	#header nav ul li {
+		display: block;
+		margin-bottom: 10px;
+	}
 
-	#main {
-    padding: 20px 0;
-  }
+	.row {
+		flex-direction: column; /* 작은 화면에서 박스들을 세로로 쌓음 */
+		align-items: center;
+	}
 
-  .container2 {
-    padding: 10px;
-  }
+	.box {
+		width: 100%; /* 작은 화면에서는 전체 너비를 차지 */
+		margin-bottom: 1em;
+	}
 
-  section img {
-    width: 100%;
-    height: auto;
-  }
+	.container2 {
+		padding: 10px;
+	}
 
+	section img {
+		width: 100%;
+		height: auto;
+	}
+
+	.wrapper {
+		padding: 2em 0;
+	}
+
+	#banner {
+		padding: 7em 0;
+	}
+
+	#banner h2 {
+		font-size: 2em;
+	}
+
+	#banner p {
+		font-size: 1em;
+		padding: 0 1em;
+	}
 }
