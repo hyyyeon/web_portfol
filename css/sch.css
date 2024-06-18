@@ -9,7 +9,7 @@
 		line-height: 1.75em;
 	}
 
-/* @@@@@@@@@@헤더@@@@@@@@@@ */
+/* @@@@@@@@@@ 헤더 @@@@@@@@@@ */
 #header {
 	background: #fff;
 	color: #555f66;
@@ -233,7 +233,7 @@
 				text-decoration: none;
 			}
 
-			/* @@@@@@컨테이너@@@@@@@ */
+			/* @@@@@@ 컨테이너 @@@@@@@ */
 			.container {
 				max-width: 1200px; 
 				margin: 0 auto; /* 가운데 정렬을 위한 마진 설정 */

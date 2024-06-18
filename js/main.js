@@ -33,19 +33,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
   displayDates();
 });
 function displayDates() {
-  // 현재 날짜 객체 생성
+  // 현재 날짜
   const currentDate = new Date();
   const formattedCurrentDate = formatDate(currentDate);
-  // 특정 날짜 객체 생성 (2024년 8월 7일)
-  const specificDate = new Date(2024, 7, 7); // 월(month)는 0부터 시작하므로 7은 8월을 나타냄
+  // 특정 날짜 
+  const specificDate = new Date(2024, 7, 7);
   const formattedSpecificDate = formatDate(specificDate);
-  // HTML 엘리먼트에 날짜 출력
-  document.getElementById('currentDate').textContent = "현재 날짜: " + formattedCurrentDate;
+  // 출력
+  document.getElementById('currentDate').textContent = "오늘 날짜: " + formattedCurrentDate;
   document.getElementById('specificDate').textContent = "해커톤 날짜 : " + formattedSpecificDate;
 }
 function formatDate(date) {
   const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0'); //월은 0부터 시작
   const day = String(date.getDate()).padStart(2, '0');
   return `${year}-${month}-${day}`;
 }
