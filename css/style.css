@@ -273,17 +273,6 @@
 }
 
 
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column; /* 작은 화면에서 박스들을 세로로 쌓음 */
-    align-items: center;
-  }
-  .box {
-    width: 100%; /* 작은 화면에서는 전체 너비를 차지 */
-    margin-bottom: 1em;
-  }
-	
-}
 
 @media (max-width: 600px) {
   header {
@@ -306,11 +295,25 @@
   }
 
   .row {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /* 작은 화면에서 박스들을 세로로 쌓음 */
+    align-items: center;
+  }
+  .box {
+    width: 100%; /* 작은 화면에서는 전체 너비를 차지 */
+    margin-bottom: 1em;
   }
 
-  .box {
-    margin-bottom: 10px;
+	#main {
+    padding: 20px 0;
   }
+
+  .container2 {
+    padding: 10px;
+  }
+
+  section img {
+    width: 100%;
+    height: auto;
+  }
+
 }
