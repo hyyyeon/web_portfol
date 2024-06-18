@@ -1,8 +1,6 @@
-
 function sayHello() {
   alert('main페이지 입니다');
 }
-
 
 // 화살표함수 - 콘솔에 나옴
 const arrow = () => {
@@ -29,3 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('Button 클릭');
   });
 });
+
+// 메뉴 토글
