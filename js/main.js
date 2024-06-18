@@ -54,7 +54,7 @@ function formatDate(date) {
 
 // @@@토글 @@@
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleBtn = document.querySelector('.navbar_togglebtn'); 
+  const toggleBtn = document.querySelector('.navbar_togglebtn');
   const menu = document.querySelector('.navbar_menu');
 
   toggleBtn.addEventListener('click', () => {

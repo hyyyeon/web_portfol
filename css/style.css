@@ -288,6 +288,9 @@
 .navbar_menu.active {
 	display: flex;
 }
+.navbar_togglebtn {
+	display: none; /* 기본적으로는 숨김 */
+}
 
 /* 반응형 */
 @media screen and (max-width: 768px) {
@@ -302,12 +305,15 @@
 			width: 100%;
 			display: none;
 	}
+	.navbar_menu.active {
+			display: flex;
+	}
 	.navbar_menu li {
 			width: 100%;
 			text-align: center;
 	}
 	.navbar_togglebtn {
-			display: block;
+		display: block; /* 작은 화면에서 보이도록 함 */
 	}
 }
 
