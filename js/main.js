@@ -50,15 +50,12 @@ function formatDate(date) {
   return `${year}-${month}-${day}`;
 }
 
-
-
-// @@@토글 @@@
+// 토글
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleBtn = document.querySelector('.navbar_togglebtn');
-  const menu = document.querySelector('.navbar_menu');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbarMenu = document.querySelector('.navbar_menu');
 
-  toggleBtn.addEventListener('click', () => {
-      menu.classList.toggle('active');
+  menuToggle.addEventListener('click', function() {
+      navbarMenu.classList.toggle('active');
   });
 });
-
